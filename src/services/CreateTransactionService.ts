@@ -1,9 +1,10 @@
-import { getRepository } from 'typeorm';
+import { getRepository, getCustomRepository } from 'typeorm';
 
 import AppError from '../errors/AppError';
 
 import Transaction from '../models/Transaction';
 import Category from '../models/Category';
+import TransactionsRepository from '../repositories/TransactionsRepository';
 
 interface TransactionRequest {
   title: string;
@@ -45,6 +46,14 @@ class CreateTransactionService {
 
     if (!(typeof value === 'number')) {
       throw new AppError('Value must be a number');
+    }
+
+    const transactionsRepository = getCustomRepository(TransactionsRepository);
+
+    const { total } = await transactionsRepository.getBalance();
+
+    if (type === 'outcome' && value > total) {
+      throw new AppError('The value is greater than the total');
     }
 
     const transactionRepository = getRepository(Transaction);
