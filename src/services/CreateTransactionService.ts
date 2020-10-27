@@ -20,16 +20,11 @@ class CreateTransactionService {
     type,
     category,
   }: TransactionRequest): Promise<Transaction> {
-    const categoryRepository = getRepository(Category);
+    const transactionsRepository = getCustomRepository(TransactionsRepository);
+    const { total } = await transactionsRepository.getBalance();
 
-    let transactionCategory = await categoryRepository.findOne({
-      where: { title: category },
-    });
-
-    if (!transactionCategory) {
-      transactionCategory = categoryRepository.create({ title: category });
-
-      await categoryRepository.save(transactionCategory);
+    if (type === 'outcome' && value > total) {
+      throw new AppError('The value is greater than the total');
     }
 
     if (!['income', 'outcome'].includes(type)) {
@@ -40,12 +35,16 @@ class CreateTransactionService {
       throw new AppError('Value must be a number');
     }
 
-    const transactionsRepository = getCustomRepository(TransactionsRepository);
+    const categoryRepository = getRepository(Category);
 
-    const { total } = await transactionsRepository.getBalance();
+    let transactionCategory = await categoryRepository.findOne({
+      where: { title: category },
+    });
 
-    if (type === 'outcome' && value > total) {
-      throw new AppError('The value is greater than the total');
+    if (!transactionCategory) {
+      transactionCategory = categoryRepository.create({ title: category });
+
+      await categoryRepository.save(transactionCategory);
     }
 
     const transactionRepository = getRepository(Transaction);
