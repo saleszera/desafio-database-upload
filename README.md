@@ -43,11 +43,11 @@ Com estas ferramentas instaladas, siga os passos abaixo!
    - Delete de transaction
 ![delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
    - Importando arquivo CSV para cadastro de transactions. Lembrando que o arquivo deve estar no seguinte formato:
-   ```
+   ```plain-text
    title, type, value, category
-Loan, income, 1500, Others
-Website Hosting, outcome, 50, Others
-Ice cream, outcome, 3, Food
+   Loan, income, 1500, Others
+   Website Hosting, outcome, 50, Others
+   Ice cream, outcome, 3, Food
    ```
 
 ![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
