@@ -43,17 +43,23 @@ Com estas ferramentas instaladas, siga os passos abaixo!
 ![migrations](https://media.giphy.com/media/2N5XCE94ySiWrZIGAB/giphy.gif)
 
 6. Abra o insomnia e teste as rotas
-   - Cadastro de transactions.  
-   ![cadastro](https://media.giphy.com/media/mZ6FR182XBlfDZVH98/giphy.gif)
+   - Cadastro de transactions. Utilize o metodo POST para `http://localhost:3333/transactions`.  
+   ```JSON
+    {
+      "title": "Pagamento",
+      "value": 2000,
+      "type": "income",
+      "category": "Other"
+    }
+   ```
 
-   - Listagem de transactions.  
+   - Listagem de transactions. Selecione o metodo GET para `http://localhost:3333/transacions`.
      ![listagem](https://media.giphy.com/media/2yTYm9U77Vvtv6a0zA/giphy.gif)
 
-   - Delete de transaction.  
+   - Delete de transaction. Utilize o metodo DELETE para `http://localhost:3333/transactions/(id da transaction)`
      ![delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
 
-   - Importando arquivo CSV para cadastro de transactions.  
-
+   - Importando arquivo CSV para cadastro de transactions. Utilize o metodo POST e selecione a opção Multipart Form para testar a rota.
      ![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
 ### ⚠️ Observação ⚠️
 O arquivo .CSV deve estar no seguinte formato:
