@@ -33,12 +33,21 @@ Com estas ferramentas instaladas, siga os passos abaixo!
 
 4. Utilize o comando `yarn` ou `npm install` para fazer o download das dependencias
 ![instalando dependencias](https://media.giphy.com/media/StTAe8COE7wGiskUAt/giphy.gif)
-5. Abra o insomnia e teste as rotas
+5. Rode as migrations com o comando `yarn typeorm migration:run`
+![migrations](https://media.giphy.com/media/2N5XCE94ySiWrZIGAB/giphy.gif)
+6. Abra o insomnia e teste as rotas
    - Cadastro de transactions
 ![cadastro](https://media.giphy.com/media/mZ6FR182XBlfDZVH98/giphy.gif)
    - Listagem de transactions
 ![listagem](https://media.giphy.com/media/2yTYm9U77Vvtv6a0zA/giphy.gif)
    - Delete de transaction
-![Delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
-   - Importando arquivo CSV para cadastro de transactions
+![delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
+   - Importando arquivo CSV para cadastro de transactions. Lembrando que o arquivo deve estar no seguinte formato:
+   ```
+   title, type, value, category
+Loan, income, 1500, Others
+Website Hosting, outcome, 50, Others
+Ice cream, outcome, 3, Food
+   ```
+
 ![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
