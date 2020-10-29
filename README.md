@@ -24,33 +24,21 @@ Para utilizar a aplicação é fundamental que estejam instalados as seguintes f
 - DBeaver
 - Insomnia
 Com estas ferramentas instaladas, siga os passos abaixo!
+
 1. Crie um container no docker para o postgres
-<div>
-  <img src="https://media.giphy.com/media/mfywAOZXm1558QQwfv/giphy.gif" alt="docker">
-</div>
+![docker](https://media.giphy.com/media/mfywAOZXm1558QQwfv/giphy.gif)
 2. Abra o seu container com o DBeaver e crie o banco de dados com o nome de `gostack_desafio06`
-<div>
-  <img src="https://media.giphy.com/media/MZyhmLL8QAVhcWNX2L/giphy.gif" alt="db_create">
-</div>
+![create_DB](https://media.giphy.com/media/MZyhmLL8QAVhcWNX2L/giphy.gif)
 3. Faça o clone do repositório com o comando `git clone https://github.com/saleszera/desafio-database-upload.git`
+
 4. Utilize o comando `yarn` ou `npm install` para fazer o download das dependencias
-<div>
-  <img src="https://media.giphy.com/media/StTAe8COE7wGiskUAt/giphy.gif" alt="instalando dependencias">
-</div>
+![instalando dependencias](https://media.giphy.com/media/StTAe8COE7wGiskUAt/giphy.gif)
 5. Abra o insomnia e teste as rotas
    - Cadastro de transactions
-<div>
-  <img src="https://media.giphy.com/media/mZ6FR182XBlfDZVH98/giphy.gif" alt="cadastro">
-</div>
+![cadastro](https://media.giphy.com/media/mZ6FR182XBlfDZVH98/giphy.gif)
    - Listagem de transactions
-<div>
-  <img src="https://media.giphy.com/media/2yTYm9U77Vvtv6a0zA/giphy.gif" alt="busca">
-</div>
+![listagem](https://media.giphy.com/media/2yTYm9U77Vvtv6a0zA/giphy.gif)
    - Delete de transaction
-<div>
-  <img src="https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif" alt="delete">
-</div>
+![Delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
    - Importando arquivo CSV para cadastro de transactions
-<div>
-  <img src="https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif" alt="import">
-</div>
+![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
