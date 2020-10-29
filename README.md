@@ -26,9 +26,8 @@ Para utilizar a aplicação é fundamental que estejam instalados as seguintes f
 Com estas ferramentas instaladas, siga os passos abaixo!
 
 1. Crie um container no docker para o postgres.
-&nbsp;
 ![docker](https://media.giphy.com/media/mfywAOZXm1558QQwfv/giphy.gif)
-&nbsp;
+
 2. Abra o seu container com o DBeaver e crie o banco de dados com o nome de `gostack_desafio06`.
 &nbsp;
 ![create_DB](https://media.giphy.com/media/MZyhmLL8QAVhcWNX2L/giphy.gif)
@@ -45,19 +44,15 @@ Com estas ferramentas instaladas, siga os passos abaixo!
 &nbsp;
 6. Abra o insomnia e teste as rotas
    - Cadastro de transactions.
-      &nbsp;
-     ![cadastro](https://media.giphy.com/media/mZ6FR182XBlfDZVH98/giphy.gif)
-      &nbsp;
+   ![cadastro](https://media.giphy.com/media/mZ6FR182XBlfDZVH98/giphy.gif)
+
    - Listagem de transactions.
-      &nbsp;
      ![listagem](https://media.giphy.com/media/2yTYm9U77Vvtv6a0zA/giphy.gif)
-      &nbsp;
+
    - Delete de transaction.
-      &nbsp;
      ![delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
-      &nbsp;
+
    - Importando arquivo CSV para cadastro de transactions.
-      &nbsp;
      ![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
 
 ### ⚠️ Observação ⚠️
