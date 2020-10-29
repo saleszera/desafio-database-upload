@@ -25,36 +25,36 @@ Para utilizar a aplicação é fundamental que estejam instalados as seguintes f
 - Insomnia
 Com estas ferramentas instaladas, siga os passos abaixo!
 
-1. Crie um container no docker para o postgres.
+1. Crie um container no docker para o postgres.  
 ![docker](https://media.giphy.com/media/mfywAOZXm1558QQwfv/giphy.gif)
 
-2. Abra o seu container com o DBeaver e crie o banco de dados com o nome de `gostack_desafio06`.
-&nbsp;
+2. Abra o seu container com o DBeaver e crie o banco de dados com o nome de `gostack_desafio06`.  
+
 ![create_DB](https://media.giphy.com/media/MZyhmLL8QAVhcWNX2L/giphy.gif)
-&nbsp;
+
 3. Faça o clone do repositório com o comando `git clone https://github.com/saleszera/desafio-database-upload.git`
 
-4. Utilize o comando `yarn` ou `npm install` para fazer o download das dependencias.
-&nbsp;
+4. Utilize o comando `yarn` ou `npm install` para fazer o download das dependencias.  
+
 ![instalando dependencias](https://media.giphy.com/media/StTAe8COE7wGiskUAt/giphy.gif)
-&nbsp;
-5. Rode as migrations com o comando `yarn typeorm migration:run`.
-&nbsp;
+
+5. Rode as migrations com o comando `yarn typeorm migration:run`.  
+
 ![migrations](https://media.giphy.com/media/2N5XCE94ySiWrZIGAB/giphy.gif)
-&nbsp;
+
 6. Abra o insomnia e teste as rotas
-   - Cadastro de transactions.
+   - Cadastro de transactions.  
    ![cadastro](https://media.giphy.com/media/mZ6FR182XBlfDZVH98/giphy.gif)
 
-   - Listagem de transactions.
+   - Listagem de transactions.  
      ![listagem](https://media.giphy.com/media/2yTYm9U77Vvtv6a0zA/giphy.gif)
 
-   - Delete de transaction.
+   - Delete de transaction.  
      ![delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
 
-   - Importando arquivo CSV para cadastro de transactions.
-     ![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
+   - Importando arquivo CSV para cadastro de transactions.  
 
+     ![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
 ### ⚠️ Observação ⚠️
 O arquivo .CSV deve estar no seguinte formato:
    ```plain-text
@@ -66,3 +66,4 @@ O arquivo .CSV deve estar no seguinte formato:
 ## Obrigado por testar a API 😁️
 &nbsp;
 ![the end](https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif)
+
