@@ -42,12 +42,15 @@ Com estas ferramentas instaladas, siga os passos abaixo!
 ![listagem](https://media.giphy.com/media/2yTYm9U77Vvtv6a0zA/giphy.gif)
    - Delete de transaction
 ![delete](https://media.giphy.com/media/keTbnknKVE0cPanj60/giphy.gif)
-   - Importando arquivo CSV para cadastro de transactions. Lembrando que o arquivo deve estar no seguinte formato:
+   - Importando arquivo CSV para cadastro de transactions.
+![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
+
+### ⚠️ Observação ⚠️
+O arquivo .CSV deve estar no seguinte formato:
    ```plain-text
    title, type, value, category
    Loan, income, 1500, Others
    Website Hosting, outcome, 50, Others
    Ice cream, outcome, 3, Food
    ```
-
-![import](https://media.giphy.com/media/YgT725lJGwdJxJYYBG/giphy.gif)
+## Obrigado por testar a API 😁️
